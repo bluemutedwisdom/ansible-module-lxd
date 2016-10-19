@@ -1,11 +1,11 @@
 ---
 # defaults file for ansible-module-lxd
 
-lxd_bridgeconf_ipv4_addr: "10.254.254.1"
-lxd_bridgeconf_ipv4_netmask: "255.255.255.0"
-lxd_bridgeconf_ipv4_network: "10.254.254.1/24"
-lxd_bridgeconf_ipv4_dhcp_range: "10.254.254.2,10.254.254.253"
-lxd_bridgeconf_ipv4_dhcp_max: 252
+lxd_bridgeconf_ipv4_addr: "172.16.0.1"
+lxd_bridgeconf_ipv4_netmask: "255.255.0.0"
+lxd_bridgeconf_ipv4_network: "172.16.0.1/16"
+lxd_bridgeconf_ipv4_dhcp_range: "172.16.1.1,172.16.255.254"
+lxd_bridgeconf_ipv4_dhcp_max: 65279
 lxd_bridgeconf_ipv4_nat: true
 lxd_bridgeconf_ipv6_nat: false
 lxd_bridgeconf_ipv6_proxy: false
